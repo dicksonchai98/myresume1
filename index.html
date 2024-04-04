@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="profile">
+     <span class="profile-img"> <span><img src="./line_188716030462321.jpg" alt=""></span> </span>
+      <h3 class="name">蔡迪生 Dickson-Chai</h3>
+      <p class="text-color">前端工程師 Fronted Developr</p>
+      <div class="social">
+        <a href="https://github.com/dicksonchai98"><i class="bi bi-github"></i></a></i
+        ><a href="mailto:chaichaidickson@gmail.com"> <i class="bi bi-envelope"></i></a
+        ><a href="https://line.me/ti/p/pDLvcdmI7E"> <i class="bi bi-line"></i> </a>
+      </div>
+      <div class="experiences">
+        <div>
+          <p>1Y+</p>
+          <p class="text-color">工作經驗</p>
+        </div>
+        <div>
+          <p>2+</p>
+          <p class="text-color">完成專案</p>
+        </div>
+        <div>
+          <p>25Y</p>
+          <p class="text-color">目前年紀</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn">
+      <button onclick="openTab('experience')">經歷</button>
+      <button onclick="openTab('portfolio')">作品集</button>
+      <button onclick="openTab('skills')">技能</button>
+      <button><a href='https://drive.google.com/file/d/1f7-h1HOk3gM0GfC7cE5rmpZwle980gZ0/view?usp=sharing'><i class="bi bi-box-arrow-up-right"></i>履歷</a></button>
+
+    </div>
+
+    <div id="experience" class="tabcontent active">
+      <h3><i class="bi bi-mortarboard text-color"></i></i>學經歷</h3>
+      <div class="experience-content">
+          <div class="step"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="step-content">
+            <div><h3>自學前端</h3><p class="text-color">vue.js</p>
+                <p class="text-color">11.2023-現在</p></div>
+              <div><h3>統一期貨</h3><p class="text-color">期貨業務員</p>
+              <p class="text-color">01.2022-10.2023</p></div>
+          <div><h3>國立暨南國際大學</h3>
+          <p class="text-color">財務金融學系</p><p class="text-color">2017-2021</p></div></div>
+             </div>
+      </div>
+
+    <div id="portfolio" class="tabcontent">
+        <div class="portfolio">
+            
+            <div class="img"><img src="./Screenshot 2024-03-25 013751.png" alt=""></div>  
+              <div>
+                  <div class="portfolio-content"> <p class="text-color">個人專案</p>
+                              <h3>VILLAGE PARK</h3>
+                              <P>為了實現功能完善的網頁，我選擇了電商平台作為我的第一個專案。專案中使用了Bootstrap的格線系統進行設計，並利用Vite建構工具搭建了環境。為提供更好的用戶體驗，使用了vue-router實現頁面之間的切換邏輯，並利用導航守衛阻止未登入用戶訪問其他頁面。在資料管理方面，使用了props和emit進行父子傳遞，並使用pinia進行扁平化共享資料和功能的部分。此外，用戶的購物車數據通過local storage保存，並使用firebase實現用戶驗證。在專案中也導入一些plugin功能來處理過場效果和輪播功能。為了使專案得到更好的維護，功能被拆分成單一組件進行管理，使用vite打包工具將專案壓縮並上傳到GitHub進行管理和展示。</P>
+                              <a href="https://github.com/dicksonchai98/villagepark"><button><i class="bi bi-github"></i>github</button></a><a href="https://dicksonchai98.github.io/villagepark-project/#/"><button><i class="bi bi-box-arrow-up-right"></i>demo</button>
+                              </a>
+                              </div>
+              </div>
+                </div>
+                <div class="portfolio">
+            
+                  <div class="img"><img src="./Screenshot 2024-04-03 101524.png" alt=""></div>  
+                    <div>
+                        <div class="portfolio-content"> <p class="text-color">團隊專案</p>
+                                    <h3>HELP U FOCUS（開發中）</h3>
+                                    <P>此專案的目的為積累團隊協作的開發經驗，團隊成員包括後端、前端和UI設計師。我在團隊中負責前端開發和專案管理，通過撰寫專案規格書與後端溝通API的設計。為了方便管理，我們採用了nuxt框架。在團隊協作方面，我們使用Git/GitHub進行管理。為了提高CSS撰寫效率，我們引入SCSS預處理器。為了提高CSS撰寫效率，我們引入了SCSS預處理器。由於前後端作業分離，我學會使用mock API進行測試。後端加入後，數據存儲在data base中，API串接採用了async/await，資料提取則使用http method進行請求。此外，為了模擬職場安全性的處理，在請求時將bearer token添加到header進行驗證，並將token保存在記憶體中，在用戶離開網頁後銷毀，以提高安全性。</P>
+                                    <a href="https://github.com/dicksonchai98/villagepark"><button><i class="bi bi-github"></i>github</button></a>
+                                    </div>
+                    </div>
+                      </div>
+        </div>
+
+    <div id="skills" class="tabcontent">
+      <h3>前端開發</h3>
+      <div class="skill-content">
+          <ul><li><i class="bi bi-check2-circle"></i>html</li>
+          <li><i class="bi bi-check2-circle"></i>css</li>
+          <li><i class="bi bi-check2-circle"></i>javascript</li>
+          <li><i class="bi bi-check2-circle"></i>vue.js</li>
+          <li><i class="bi bi-check2-circle"></i>nuxt.js</li>
+          <li><i class="bi bi-check2-circle"></i>scss</li>
+          <li><i class="bi bi-check2-circle"></i>bootstrap</li>
+          <li><i class="bi bi-check2-circle"></i>typescript</li></ul>
+      </div>
+      <h3>其他</h3>
+      <div class="skill-content">
+          <ul><li><i class="bi bi-check2-circle"></i>figma</li>
+          <li><i class="bi bi-check2-circle"></i>adobe illus</li>
+          <li><i class="bi bi-check2-circle"></i>github\git</li>
+ 
+
+      <li><i class="bi bi-check2-circle"></i>vite</li>
+      <li><i class="bi bi-check2-circle"></i>firebase</li></ul>
+    </div>
+    <script src="myresume.js"></script>
+  </body>
+</html>

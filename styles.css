@@ -1,0 +1,243 @@
+.tabcontent {
+  display: none;
+}
+
+.text-color {
+  color: #7096cd;
+}
+
+.active {
+  display: block;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  font-weight: lighter;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #7096cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.profile span {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile span img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile div {
+  margin-top: 10px;
+}
+
+.experiences {
+  display: flex;
+}
+
+.experiences div {
+  margin: 0 20px;
+}
+
+.social a {
+  text-decoration: none;
+  margin: auto 10px;
+  display: inline-block;
+}
+
+.social i {
+  color: #5784c4;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: #7096cd;
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.bi-box-arrow-up-right {
+  margin-right: 5px;
+  color: white;
+}
+
+.btn button a {
+  color: white;
+}
+
+#experience > h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#experience h3 i {
+  margin: 5px;
+}
+
+#experience {
+  padding: 20px;
+}
+
+#experience h3 {
+  font-weight: lighter;
+}
+
+.experience-content {
+  width: 200px;
+  justify-content: center;
+  display: flex;
+  margin-left: 60px;
+}
+
+.step-content div {
+  margin-top: 10px;
+}
+
+#experience span:nth-child(1),
+#experience span:nth-child(3),
+#experience span:nth-child(5) {
+  border-radius: 50%;
+  width: 8px;
+
+  height: 8px;
+  display: block;
+  background-color: #7096cd;
+}
+
+.step {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#experience span:nth-child(2),
+#experience span:nth-child(4) {
+  width: 0.5px;
+  height: 65px;
+  display: block;
+  border: 1px solid #7096cd;
+  margin: auto;
+}
+
+.portfolio {
+  width: 80%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin: 15px auto;
+  line-height: 30px;
+}
+
+.portfolio h3 {
+  font-weight: lighter;
+}
+
+.portfolio-content {
+  padding: 20px;
+}
+
+.img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px 10px;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#skills {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: larger;
+  padding-left: 7%;
+}
+
+#skills h3 {
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+/* #skills ul li {
+  text-align: center;
+} */
+
+.portfolio-content button {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.portfolio-content button i {
+  margin-right: 10px;
+}
+
+.skill-content ul {
+  display: grid;
+  margin-top: 10px;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  font-weight: lighter;
+}
+
+.skill-content ul i {
+  margin-right: 7px;
+  color: #7096cd;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-content ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
